@@ -481,12 +481,14 @@ def p_dfa_md(t):
     
 def p_nfa_md(t):
     '''md : NFA lines'''
+    print('parsed NFA keyword')
     global LINENO
     LINENO = -1 # restore for next error processing
     t[0] = ('NFA', get_machine_components(t[2], 'NFA'))
 
 def p_pda_md(t):
     '''md : PDA lines'''
+    print('parsed PDA keyword')
     mc = get_machine_components(t[2], 'PDA')
     (From_s, To_s,
      G_in,   G_out,
@@ -499,6 +501,7 @@ def p_pda_md(t):
     
 def p_tm_md(t):
     '''md : TM lines'''
+    print('parsed TM keyword')
     mc = get_machine_components(t[2], 'TM')
     (From_s, To_s,
      G_in,   G_out,
@@ -514,11 +517,13 @@ def p_tm_md(t):
 # lines for all machine types
     
 def p_lines1(t):
+    print('parsing last line')
     '''lines : one_line'''
     t[0] = [ t[1] ] # One line's attribute is a dict
     
 def p_lines2(t):
     '''lines : one_line lines'''
+    print('parsing a line with more to follow')
     one_line_attr = [ t[1] ]
     lines_attr    = t[2]
     t[0] = one_line_attr + lines_attr # List of line attrs
@@ -544,22 +549,27 @@ def p_one_line(t):
 
 def p_state(t):
     '''state : ID'''
+    print('parsed a state ID')
     t[0] = [ t[1] ]
 
 def p_states1(t):
     '''states : state'''
+    print('parsing a state')
     t[0] = t[1] 
     
 def p_states2(t):
     '''states : state COMMA states'''
+    print('parsing a state with more to follow after a comma')
     t[0] = t[1] + t[3]
 
 def p_labels1(t):
     '''labels : one_label'''
+    print('parsing one label')
     t[0] = t[1]
     
 def p_labels2(t):
     '''labels : one_label OR labels'''
+    print('parsing a label with an OR followed by more labels')
     # Combine SigmaEps, GammaIn, GammaOut, HeadDirn labels 
     # component-wise
     L1 = t[1]
@@ -577,6 +587,7 @@ def p_labels2(t):
 # A label for a TM is  ID_or_B ; ID_or_B , ID  where the last ID is L,R,S
 def p_one_label1(t):
     '''one_label : ID_or_EPS_or_B'''
+    print('parsing a label for DFA or NFA')
     t[0] = t[1]
     
 def p_ID_or_EPS_or_B(t):
@@ -590,12 +601,16 @@ def p_ID_or_EPS_or_B(t):
     elif id=="''":
         id = ''
     #--
-    print("Got one label of a DFA, which is an ID, that being", id)
+    if id != '' and id != "":
+        print("Got one label of a DFA, which is an ID, that being", id)
+    else:
+        print("Got one label of a DFA, which is an ID, that being epsilon")
     lineattr = default_line_attr()
     lineattr.update({ "SigmaEps" : [ id ] })
     t[0] = lineattr
 
 def p_one_label2(t):
+    print('parsing one label for a PDA')
     '''one_label : ID_or_EPS_or_B COMMA ID_or_EPS_or_B SEMICOLON ID_or_EPS_or_B'''
     # t[1] is input symbol for PDA, that would already have 
     # climbed into SigmaEps.
@@ -618,7 +633,8 @@ def dirn_is_ok(dirn):
     return dirn in set({'L','R','S'})
 
 def p_one_label3(t):
-    '''one_label : ID_or_EPS_or_B SEMICOLON ID_or_EPS_or_B COMMA ID_or_EPS_or_B'''        
+    '''one_label : ID_or_EPS_or_B SEMICOLON ID_or_EPS_or_B COMMA ID_or_EPS_or_B'''
+    print('parsing one label for TM')
     # t[1] is input symbol for TM, that would already have 
     # climbed into SigmaEps.
     #

@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6d32581-3b9f-4895-a63e-6ea43e4b18fc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/jove/Def_RE2NFA_chatty2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jove/Def_RE2NFA_chatty.py" beforeDir="false" afterPath="$PROJECT_DIR$/jove/Def_RE2NFA_chatty.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jove/Def_md2mc_chatty.py" beforeDir="false" afterPath="$PROJECT_DIR$/jove/Def_md2mc_chatty.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,24 +17,45 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jove/Def_md2mc_chatty.py">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="473">
+              <caret line="484" column="17" lean-forward="true" selection-start-line="484" selection-start-column="17" selection-end-line="484" selection-end-column="17" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jove/Def_RE2NFA_chatty.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1901">
-              <caret line="227" column="31" selection-start-line="227" selection-start-column="31" selection-end-line="227" selection-end-column="31" />
+            <state relative-caret-position="459">
+              <caret line="117" column="29" lean-forward="true" selection-start-line="117" selection-start-column="29" selection-end-line="117" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jove/Def_RE2NFA_chatty2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="97" column="29" lean-forward="true" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>alt</find>
       <find>print</find>
+      <find>def p_</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -46,6 +70,8 @@
         <option value="$PROJECT_DIR$/jove/AnimateNFA.py" />
         <option value="$PROJECT_DIR$/jove/AnimateDFA.py" />
         <option value="$PROJECT_DIR$/jove/Def_RE2NFA_chatty.py" />
+        <option value="$PROJECT_DIR$/jove/Def_RE2NFA_chatty2.py" />
+        <option value="$PROJECT_DIR$/jove/Def_md2mc_chatty.py" />
       </list>
     </option>
   </component>
@@ -163,13 +189,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jove/Def_RE2NFA_chatty2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="97" column="29" lean-forward="true" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/jove/Def_md2mc_chatty.py">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="484" column="17" lean-forward="true" selection-start-line="484" selection-start-column="17" selection-end-line="484" selection-end-column="17" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jove/Def_RE2NFA_chatty.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1901">
-          <caret line="227" column="31" selection-start-line="227" selection-start-column="31" selection-end-line="227" selection-end-column="31" />
+        <state relative-caret-position="459">
+          <caret line="117" column="29" lean-forward="true" selection-start-line="117" selection-start-column="29" selection-end-line="117" selection-end-column="29" />
         </state>
       </provider>
     </entry>
