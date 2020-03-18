@@ -154,6 +154,7 @@ def mk_cat_nfa(N1, N2):
 
 def p_expression_cat_id(t):
     '''catexp :  ordyexp'''
+    print('found an ordy exp')
     # Simply inherit the attribute from t[1] and pass on
     t[0] = t[1]
 
@@ -161,6 +162,7 @@ def p_expression_cat_id(t):
 
 def p_expression_ordy_star(t):
     'ordyexp : ordyexp STAR'
+    print('found a kleene star')
     t[0] = mk_star_nfa(t[1])
 
 def mk_star_nfa(N):
@@ -197,6 +199,7 @@ def mk_star_nfa(N):
 
 def p_expression_ordy_paren(t):
     'ordyexp : LPAREN expression RPAREN'
+    print('found a pair of parentheses')
     # Simply inherit the attribute from t[2] and pass on
     t[0] = t[2]
 
@@ -204,6 +207,7 @@ def p_expression_ordy_paren(t):
     
 def p_expression_ordy_eps(t):
     'ordyexp : EPS'
+    print('found epsilon, making epsilon NFA')
     t[0] = mk_eps_nfa()
 
 def mk_eps_nfa():
@@ -221,6 +225,7 @@ def mk_eps_nfa():
 
 def p_expression_ordy_str(t):
     'ordyexp : STR'
+    print('found a letter', t[1])
     t[0] = mk_symbol_nfa(t[1])
 
 def mk_symbol_nfa(a):
