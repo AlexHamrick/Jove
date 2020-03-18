@@ -517,8 +517,8 @@ def p_tm_md(t):
 # lines for all machine types
     
 def p_lines1(t):
-    print('parsing last line')
     '''lines : one_line'''
+    print('parsing last line')
     t[0] = [ t[1] ] # One line's attribute is a dict
     
 def p_lines2(t):
@@ -610,8 +610,8 @@ def p_ID_or_EPS_or_B(t):
     t[0] = lineattr
 
 def p_one_label2(t):
-    print('parsing one label for a PDA')
     '''one_label : ID_or_EPS_or_B COMMA ID_or_EPS_or_B SEMICOLON ID_or_EPS_or_B'''
+    print('parsing one label for a PDA')
     # t[1] is input symbol for PDA, that would already have 
     # climbed into SigmaEps.
     #

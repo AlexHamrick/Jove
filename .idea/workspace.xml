@@ -15,29 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jove/Def_md2mc_chatty.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="484" column="17" lean-forward="true" selection-start-line="484" selection-start-column="17" selection-end-line="484" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jove/Def_RE2NFA_chatty.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="117" column="29" lean-forward="true" selection-start-line="117" selection-start-column="29" selection-end-line="117" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jove/Def_RE2NFA_chatty2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="97" column="29" lean-forward="true" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="29" />
+            <state relative-caret-position="293">
+              <caret line="662" column="6" selection-start-line="662" selection-end-line="662" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -189,6 +171,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jove/Def_RE2NFA_chatty.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="117" column="29" lean-forward="true" selection-start-line="117" selection-start-column="29" selection-end-line="117" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/jove/Def_RE2NFA_chatty2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -198,15 +187,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jove/Def_md2mc_chatty.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="484" column="17" lean-forward="true" selection-start-line="484" selection-start-column="17" selection-end-line="484" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jove/Def_RE2NFA_chatty.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="117" column="29" lean-forward="true" selection-start-line="117" selection-start-column="29" selection-end-line="117" selection-end-column="29" />
+        <state relative-caret-position="293">
+          <caret line="662" column="6" selection-start-line="662" selection-end-line="662" selection-end-column="6" />
         </state>
       </provider>
     </entry>
